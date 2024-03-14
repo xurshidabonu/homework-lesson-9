@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imtihon ballari</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Imtihon ballari</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ism</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {% for pupil in pupils %}
+    <tr>
+        <td><li><a href="{% url 'pupil_info' pupil.id%}">{{ pupil.Ism }}</a></li></td>
+
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+1.Online store bot
+2.HTML va CSS
+3.Bootstrap
+4. Introduction to Django
+5. Django Models
+6. Django Views
+7. Django Templates
