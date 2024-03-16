@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     #my apps
     'themes_app',
     'pupils_app',
+    'themes',
+    'pupils',
 ]
 
 MIDDLEWARE = [
